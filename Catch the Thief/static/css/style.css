@@ -1,0 +1,58 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Nodos del mapa */
+.nodo {
+    fill: lightgray;
+    stroke: black;
+    stroke-width: 2;
+    transition: fill 0.3s;
+}
+
+
+.nodo.policia {
+    fill: blue;
+}
+
+.nodo.ladron {
+    fill: red;
+}
+
+.nodo.salida {
+    fill: green;
+}
+
+/* Líneas de conexión */
+.linea {
+    stroke: gray;
+    stroke-width: 2;
+}
+
+/* Contenedores y botones */
+#game-map {
+    display: block;
+    margin: 20px auto;
+    width: 500px;
+    height: 500px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: lightblue;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightgreen;
+}
+
+/* Nodo seleccionado */
+.nodo.seleccionado {
+    stroke: blue;
+    stroke-width: 4;
+}
