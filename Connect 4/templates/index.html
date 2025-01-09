@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <main>
+        <section class="section1">
+            <h1>Connect 4</h1>
+            <div class="player-info">
+                <div class="player1-info">
+                    <h2>Jugador 1</h2>
+                    <div class="player1-token"></div>
+                </div>
+                <div id="game-board"></div>
+                <div class="player2-info">
+                    <h2>Máquina</h2>
+                    <div class="player2-token"></div>
+                </div>
+            </div>
+            <div id="status"></div>
+            <button id="reset-button">Reiniciar Juego</button>
+            <div id="winner-message">
+                <h2 id="winner-text"></h2>
+            </div> 
+        </section>            
+        <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    </main>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body {
+    background: rgba(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,1071,1) 100%);
+    font-family: sans-serif;
+    color: white;
+}
+
+main{
+    width: 700px;
+    margin: 100px auto 50px;
+    display: flex;
+    align-items: center;
+}
+
+.section1{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0 10px 10px 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.player1-info, .player2-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+}
+
+.player1-token{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.player2-token{
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(7, 60px);
+    grid-template-rows: repeat(6, 60px);
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    background-color: lightblue;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+h1{
+    text-align: center;
+}
+
+button{
+    height: 100px;
+    width: 200px;
+    font-size: 30px;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+    align-items: center;
+}
+
+#winner-message {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#winner-text {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#winner-message.show{
+    display: block;
+}
